@@ -31,6 +31,11 @@ class ActivityTarea6 : AppCompatActivity() {
         }
         val data: Uri? = intent?.data
         val phoneNumber = data?.schemeSpecificPart
+
+        takePhotoButton.setOnClickListener{
+            val intent = Intent(this, CameraActivity::class.java)
+            startActivity(intent)
+        }
     }
 //    override fun onRequestPermissionsResult(
 //        requestCode: Int, permissions: Array<String>, grantResults:
