@@ -33,6 +33,22 @@
             android:name=".CameraActivity"
             android:exported="false" />
         <activity
+            android:name=".Tarea4_Activity_Views"
+            android:exported="false" />
+        <activity
+            android:name=".Tarea4_Activity_ToggleButton"
+            android:exported="false" />
+        <activity
+            android:name=".Tarea4_Activity_Images"
+            android:exported="false" />
+        <activity
+            android:name=".Tarea4_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Tarea7"
+
+            android:exported="false" />
+        <activity
             android:name=".ActivityTarea6C"
             android:enabled="true"
             android:exported="true">
@@ -60,9 +76,6 @@
         </activity>
         <activity
             android:name=".Activity_Tarea5"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_Tarea4"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
