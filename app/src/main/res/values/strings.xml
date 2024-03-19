@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TareaDesarrolloMovil</string>
+    <string name="main_menu_cartel">Seleccione una tarea</string>
+    <string name="button_tarea4">Tarea 4</string>
+    <string name="button_tarea5">Tarea 5</string>
+    <string name="button_tarea6">Tarea 6</string>
+    <string name="button_tarea7">Tarea 7</string>
+
+    <string name="work_in_progress">Work in progress!</string>
+</resources>
