@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_layout"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tarea4_Activity"
+    tools:context=".Tarea4_Activity_Images"
     android:background="@color/black"
     >
 
@@ -30,10 +31,77 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:layout_gravity="center_horizontal"
-                android:text="Escoja uno."
+                android:text="Imagenes"
                 android:textSize="60dp"
                 />
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ImageView"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:layout_marginBottom="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:contentDescription="Este es un ImageView"
+                    android:background="@android:color/darker_gray"
+
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:text="ImageButton"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:layout_gravity="center_horizontal"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:background="@android:color/darker_gray"
+
+                    />
+
+            </LinearLayout>
         </LinearLayout>
 
         <FrameLayout
@@ -89,7 +157,6 @@
                 </GridLayout>
             </LinearLayout>
         </FrameLayout>
-
     </LinearLayout>
 
 
