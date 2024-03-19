@@ -7,4 +7,6 @@
     <string name="button_tarea7">Tarea 7</string>
 
     <string name="work_in_progress">Work in progress!</string>
+    <string name="send_text">Send Text</string>
+    <string name="take_photo">Take Photo</string>
 </resources>
