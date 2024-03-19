@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         tarea_6.setOnClickListener{
-            val intent = Intent(this, Activity_Tarea6::class.java)
+            val intent = Intent(this, ActivityTarea6::class.java)
             startActivity(intent)
         }
 
