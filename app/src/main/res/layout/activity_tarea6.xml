@@ -4,19 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityTarea6">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="178dp"
-        android:layout_height="52dp"
-        android:text="@string/work_in_progress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107" />
+    tools:context=".ActivityTarea6"
+    android:background="@color/black"
+    >
 
     <EditText
         android:id="@+id/inputText"
@@ -29,7 +19,9 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.264"
-        android:importantForAutofill="no" />
+        android:importantForAutofill="no"
+        android:textColor="@color/white"
+        />
 
     <Button
         android:id="@+id/sendTextButton"

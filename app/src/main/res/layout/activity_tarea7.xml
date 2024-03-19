@@ -4,11 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Tarea7">
+    tools:context=".Activity_Tarea7"
+    android:gravity="center"
+    android:background="@color/black"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/work_in_progress"/>
+        android:gravity="center"
+        android:text="@string/work_in_progress"
+        android:textSize="70dp"
+        android:textColor="@color/white"
+        />
 
 </LinearLayout>

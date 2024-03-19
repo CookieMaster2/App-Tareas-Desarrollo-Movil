@@ -3,10 +3,13 @@ package com.example.tareadesarrollomovil
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
+var savedPicture: Uri? = null
 
 class ActivityTarea6 : AppCompatActivity() {
     lateinit var inputText: EditText
@@ -36,6 +39,28 @@ class ActivityTarea6 : AppCompatActivity() {
             val intent = Intent(this, CameraActivity::class.java)
             startActivity(intent)
         }
+
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("Tarea6Debug", "onPause")
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        val image:ImageView = findViewById(R.id.imagenIncisoDos)
+
+        Log.d("Tarea6Debug", "onResume")
+        if(savedPicture != null) {
+            Log.d("Tarea6Debug", "Found URI at "+ savedPicture.toString())
+            image.setImageURI(savedPicture)
+        }else{
+            Log.d("Tarea6Debug", "No URI found")
+        }
+
     }
 //    override fun onRequestPermissionsResult(
 //        requestCode: Int, permissions: Array<String>, grantResults:
