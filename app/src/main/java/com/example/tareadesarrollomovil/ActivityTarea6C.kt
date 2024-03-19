@@ -5,32 +5,25 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.SmsManager
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 
 class ActivityTarea6C : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tarea6_c)
+        val phoneNumberTextView: TextView = findViewById(R.id.phoneNumberView)
 
-        handleSendTextIntent()
-    }
-
-    private fun handleSendTextIntent() {
         if (intent?.action == Intent.ACTION_SENDTO || intent?.action == Intent.ACTION_VIEW) {
             val messageUri = intent.data
-            val message = intent.getStringExtra(Intent.EXTRA_TEXT)
+            //val message = intent.getStringExtra(Intent.EXTRA_TEXT)
 
             // Extract phone number from the URI
             val phoneNumber = messageUri?.schemeSpecificPart
 
-            // Use SmsManager to send the message
-            phoneNumber?.let {
-                sendSMS(it, message ?: "")
-            }
-        }
-    }
+            phoneNumberTextView.text = phoneNumber
 
-    private fun sendSMS(phoneNumber: String, message: String) {
-        val smsManager = SmsManager.getDefault()
-        smsManager.sendTextMessage(phoneNumber, null, message, null, null)
+        }
     }
 }
