@@ -13,6 +13,18 @@
         android:theme="@style/Theme.TareaDesarrolloMovil"
         tools:targetApi="31">
         <activity
+            android:name=".Tarea4_Activity_Views"
+            android:exported="false" />
+        <activity
+            android:name=".Tarea4_Activity_ToggleButton"
+            android:exported="false" />
+        <activity
+            android:name=".Tarea4_Activity_Images"
+            android:exported="false" />
+        <activity
+            android:name=".Tarea4_Activity"
+            android:exported="false" />
+        <activity
             android:name=".Activity_Tarea7"
             android:exported="false" />
         <activity
@@ -20,9 +32,6 @@
             android:exported="false" />
         <activity
             android:name=".Activity_Tarea5"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_Tarea4"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

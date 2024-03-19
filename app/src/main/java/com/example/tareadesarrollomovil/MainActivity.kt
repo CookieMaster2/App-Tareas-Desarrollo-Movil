@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         tarea_7 = findViewById(R.id.button_tarea7)
 
         tarea_4.setOnClickListener{
-            val intent = Intent(this, Activity_Tarea4::class.java)
+            val intent = Intent(this, Tarea4_Activity::class.java)
             startActivity(intent)
         }
 

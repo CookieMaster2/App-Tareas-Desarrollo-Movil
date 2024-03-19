@@ -1,32 +1,19 @@
-package com.example.tarea4
+package com.example.tareadesarrollomovil
 
 import android.content.Intent
-import android.hardware.biometrics.BiometricManager.Strings
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.HorizontalScrollView
 import android.widget.ListView
-import android.widget.ScrollView
 import android.widget.Toast
 import androidx.core.widget.NestedScrollView
-import com.google.android.material.snackbar.Snackbar
-
-//
-//Tarea #4: Controles básicos
-//
-//Este trabajo de programación es individual.
-//
-//Se debe realizar una aplicación demostrativa básica del funcionamiento de los siguientes controles: ToggleButton, Switch, ImageView, ImageButton, ScrollView y ListView. La aplicación debe incluir: (a) declaración en el layout XML, (b) declaracion e inicialización de las variables referencia en Kotlin, (c) generación de los manejadores de eventos comunes (listeners) y (d) demostración de funcionalidad básica.
-//
-
 
 class Tarea4_Activity_Views : AppCompatActivity() {
-
-    lateinit var listView:ListView
-    lateinit var scrollView:NestedScrollView
-    lateinit var HscrollView:HorizontalScrollView
+    lateinit var listView: ListView
+    lateinit var scrollView: NestedScrollView
+    lateinit var HscrollView: HorizontalScrollView
 
     private lateinit var toggleButtonsView : Button
     private lateinit var imagesView : Button

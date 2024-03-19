@@ -1,4 +1,4 @@
-package com.example.tarea4
+package com.example.tareadesarrollomovil
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,7 +9,6 @@ import android.widget.ImageView
 import com.google.android.material.snackbar.Snackbar
 
 class Tarea4_Activity_Images : AppCompatActivity() {
-
     private lateinit var imageView : ImageView
     var  imageViewClicked : Boolean = false
 
@@ -23,7 +22,7 @@ class Tarea4_Activity_Images : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tarea4_activity_images)
+        setContentView(R.layout.activity_tarea4_images)
 
         imageView = findViewById(R.id.imageView)
         imageButton = findViewById(R.id.imageButton)

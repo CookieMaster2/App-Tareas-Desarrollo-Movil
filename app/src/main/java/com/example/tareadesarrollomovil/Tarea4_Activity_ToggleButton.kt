@@ -1,7 +1,6 @@
-package com.example.tarea4
+package com.example.tareadesarrollomovil
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -11,15 +10,6 @@ import android.widget.ToggleButton
 import androidx.appcompat.widget.SwitchCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.switchmaterial.SwitchMaterial
-
-//
-//Tarea #4: Controles básicos
-//
-//Este trabajo de programación es individual.
-//
-//Se debe realizar una aplicación demostrativa básica del funcionamiento de los siguientes controles: ToggleButton, Switch, ImageView, ImageButton, ScrollView y ListView. La aplicación debe incluir: (a) declaración en el layout XML, (b) declaracion e inicialización de las variables referencia en Kotlin, (c) generación de los manejadores de eventos comunes (listeners) y (d) demostración de funcionalidad básica.
-//
-
 
 class Tarea4_Activity_ToggleButton : AppCompatActivity() {
 
@@ -42,7 +32,7 @@ class Tarea4_Activity_ToggleButton : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.tarea4_activity_togglebutton)
+        setContentView(R.layout.activity_tarea4_togglebutton)
 
         switchMaterial = findViewById(R.id.material_switch)
         switchMaterialText = findViewById(R.id.SwitchMaterialText)

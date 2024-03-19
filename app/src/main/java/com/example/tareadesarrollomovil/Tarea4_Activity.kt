@@ -1,18 +1,15 @@
-package com.example.tarea4
+package com.example.tareadesarrollomovil
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 
 class Tarea4_Activity : AppCompatActivity() {
 
     private lateinit var toggleButtonsView : Button
     private lateinit var imagesView : Button
     private lateinit var viewView : Button
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,11 +44,5 @@ class Tarea4_Activity : AppCompatActivity() {
         }
 
     }
-
-
-
-
-
-
 
 }
