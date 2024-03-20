@@ -12,8 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 var savedPicture: Uri? = null
 
 class ActivityTarea6 : AppCompatActivity() {
-    lateinit var inputText: EditText
-    private lateinit var currentPhotoPath: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tarea6)
@@ -24,16 +22,18 @@ class ActivityTarea6 : AppCompatActivity() {
         sendTextButton.setOnClickListener{
             val userInput = editTextUserInput.text.toString()
             val sendIntent = Intent()
+            // se configura el intent para que la accion sea de tipo SEND, para mandar datos a otra app
             sendIntent.setAction(Intent.ACTION_SEND)
+            //se manda el msj como EXTRA_TEXT con el intent
             sendIntent.putExtra(Intent.EXTRA_TEXT, userInput)
+            // se configura el tipo de datos que llevara el intent
             sendIntent.setType("text/plain")
-            // Check if there's an app that can handle this intent
+            // Checar si existe una app que pueda recibir los datos
             if (sendIntent.resolveActivity(packageManager) != null) {
+                // mandar los datos
                 startActivity(Intent.createChooser(sendIntent, "Choose an app"))
             }
         }
-        val data: Uri? = intent?.data
-        val phoneNumber = data?.schemeSpecificPart
 
         takePhotoButton.setOnClickListener{
             val intent = Intent(this, CameraActivity::class.java)
