@@ -62,20 +62,5 @@ class ActivityTarea6 : AppCompatActivity() {
         }
 
     }
-//    override fun onRequestPermissionsResult(
-//        requestCode: Int, permissions: Array<String>, grantResults:
-//        IntArray) {
-//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-//        val REQUEST_CODE_PERMISSIONS = 1
-//        if (requestCode == REQUEST_CODE_PERMISSIONS) {
-//            if (allPermissionsGranted()) {
-//                startCamera()
-//            } else {
-//                Toast.makeText(this,
-//                    "Permissions not granted by the user.",
-//                    Toast.LENGTH_SHORT).show()
-//                finish()
-//            }
-//        }
-//    }
+
 }
