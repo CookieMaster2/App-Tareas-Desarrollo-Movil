@@ -35,8 +35,6 @@ import java.nio.ByteBuffer
 import java.text.SimpleDateFormat
 import java.util.Locale
 
-typealias LumaListener = (luma: Double) -> Unit
-
 class CameraActivity : AppCompatActivity() {
 
     //Se usa el viewBinding para facilitar la interacción de un layout con su clase asociada
@@ -224,8 +222,9 @@ class CameraActivity : AppCompatActivity() {
     //Esta función se llama como resultado de proveer de los permisos necesarios a la aplicación
 
     override fun onRequestPermissionsResult(
-        requestCode: Int, permissions: Array<String>, grantResults:
-        IntArray
+        requestCode: Int,
+        permissions: Array<String>,
+        grantResults:IntArray
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
@@ -238,12 +237,12 @@ class CameraActivity : AppCompatActivity() {
 
             //De lo contrario solamente muestra un mensaje
             else {
-                Toast.makeText(
-                    this,
-                    "Permissions not granted by the user.",
-                    Toast.LENGTH_SHORT
-                ).show()
-                finish()
+            Toast.makeText(
+                this,
+                "Permissions not granted by the user.",
+                Toast.LENGTH_SHORT
+            ).show()
+            finish()
             }
         }
     }
