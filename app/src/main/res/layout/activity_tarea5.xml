@@ -24,10 +24,21 @@
             android:textSize="40dp" />
 
         <Button
+            android:id="@+id/time_picker_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_marginVertical="30dp"
             android:text="Hola turururururururururururururu" />
+
+        <TextView
+            android:id="@+id/time_picker_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            tools:text="Hola"
+            android:textSize="20dp"/>
 
     </LinearLayout>
 
