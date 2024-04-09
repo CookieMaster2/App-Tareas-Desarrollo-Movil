@@ -12,7 +12,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,6 +30,42 @@
             android:layout_gravity="center_horizontal"
             android:text="Hola turururururururururururururu" />
 
-    </LinearLayout>
 
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo de Date Picker"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/btnShowDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
 </LinearLayout>
