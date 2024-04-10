@@ -42,4 +42,43 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ejemplo de Date Picker"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnShowDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Select Date"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha seleccionada"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
 </LinearLayout>
