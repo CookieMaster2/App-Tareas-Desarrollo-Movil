@@ -45,10 +45,10 @@ class Tarea4_Activity_Views : AppCompatActivity() {
             Toast.makeText(this,  "Item seleccionado: "+ items[i], Toast.LENGTH_SHORT).show()
         }
 
-        scrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+        scrollView.setOnScrollChangeListener { view, scrollX, scrollY, oldScrollX, oldScrollY ->
             Toast.makeText(this,"Scrolleado", Toast.LENGTH_SHORT).show()
         }
-        HscrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, oldScrollY ->
+        HscrollView.setOnScrollChangeListener { view, scrollX, scrollY, oldScrollX, oldScrollY ->
             Toast.makeText(this,"Scrolleado", Toast.LENGTH_SHORT).show()
         }
 

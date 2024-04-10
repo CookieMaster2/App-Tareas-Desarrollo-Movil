@@ -30,6 +30,9 @@
         android:theme="@style/Theme.TareaDesarrolloMovil"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_Tarea7_Grid"
+            android:exported="false" />
+        <activity
             android:name=".CameraActivity"
             android:exported="false" />
         <activity
@@ -45,13 +48,19 @@
             android:name=".Tarea4_Activity"
             android:exported="false" />
         <activity
-            android:name=".Activity_Tarea7"
-
+            android:name=".Activity_Tarea7_Relative"
             android:exported="false" />
         <activity
             android:name=".ActivityTarea6C"
             android:enabled="true"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.SENDTO" />
 
@@ -61,18 +70,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity_Tarea7"
+            android:name=".Activity_Tarea7_Relative"
             android:exported="false" />
         <activity
             android:name=".ActivityTarea6"
             android:exported="false">
-            <intent-filter>
-                <action android:name="android.intent.action.SENDTO" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.SENDTO" /> -->
 
-                <data android:scheme="smsto" />
-            </intent-filter>
+
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+
+
+            <!-- <data android:scheme="smsto" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".Activity_Tarea5"
