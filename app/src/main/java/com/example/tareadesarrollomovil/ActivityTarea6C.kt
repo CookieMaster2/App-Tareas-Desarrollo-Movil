@@ -22,5 +22,9 @@ class ActivityTarea6C : AppCompatActivity() {
             phoneNumberTextView.text = phoneNumber
 
         }
+        if (intent?.action == Intent.ACTION_SEND){
+            val text: String? = intent.getStringExtra(Intent.EXTRA_TEXT)
+            phoneNumberTextView.text=text
+        }
     }
 }
