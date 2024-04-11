@@ -6,6 +6,7 @@
     android:paddingRight="16sp"
     android:background="@color/black"
     android:id="@+id/root"
+
     >
 
     <TextView

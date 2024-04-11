@@ -26,14 +26,15 @@ class Activity_Tarea7_Grid : AppCompatActivity() {
 
 
         RelativeButton.setOnClickListener {
-            Snackbar.make(findViewById(R.id.base_layout), "Ya estas aqui.", Snackbar.LENGTH_SHORT).show()
-        }
-
-        GridButton.setOnClickListener {
-            val intent = Intent(this, Activity_Tarea7_Grid::class.java)
+            val intent = Intent(this, Activity_Tarea7_Relative::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_REORDER_TO_FRONT
             startActivity(intent)
             finish()
+        }
+
+        GridButton.setOnClickListener {
+            Snackbar.make(findViewById(R.id.base_layout), "Ya estas aqui.", Snackbar.LENGTH_SHORT).show()
+
         }
     }
 }

@@ -23,7 +23,7 @@ class Activity_Tarea7_Relative : AppCompatActivity() {
 
 
         RelativeButton.setOnClickListener {
-            Snackbar.make(findViewById(R.id.base_layout), "Ya estas aqui.", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(findViewById(R.id.root), "Ya estas aqui.", Snackbar.LENGTH_SHORT).show()
         }
 
         GridButton.setOnClickListener {
